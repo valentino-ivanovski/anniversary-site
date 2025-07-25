@@ -45,14 +45,14 @@ const memories: Memory[] = [
     {
         id: 6,
         image: "/images/6.jpg",
-        text: "The picnic in the park where we spent hours talking about everything and nothing.",
-        date: "April 10, 2023"
+        text: "I was amazed by your skills!! I couldn't climb up there!",
+        date: "April 19, 2025"
     },
     {
         id: 7,
         image: "/images/7.JPG",
-        text: "I was amazed by your skills!! I couldn't climb up there!",
-        date: "April 19, 2025"
+        text: "We were literally just chillin together and having so much fun doing so!",
+        date: "May 5 2025"
     },
     {
         id: 8,
@@ -62,7 +62,7 @@ const memories: Memory[] = [
     },
     {
         id: 9,
-        image: "/images/9.jpeg",
+        image: "/images/9.jpg",
         text: "We sat for hours and enjoyed every single second of it.",
         date: "September 25, 2024"
     },
