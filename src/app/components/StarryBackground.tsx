@@ -11,7 +11,7 @@ const StarryBackground: React.FC = () => {
   }));
 
   return (
-    <div className="fixed inset-0 overflow-hidden pointer-events-none">
+    <div className="fixed h-screen inset-0 overflow-hidden pointer-events-none">
       {stars.map((star) => (
         <div
           key={star.id}
