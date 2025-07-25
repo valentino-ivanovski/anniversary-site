@@ -44,10 +44,10 @@ const MemoryModal: React.FC<MemoryModalProps> = ({ memory, isOpen, onClose }) =>
           </button>
           
           <div className="mb-4">
-            <img
+           <img
               src={memory.image}
               alt="Memory"
-              className="w-full h-48 object-cover rounded-lg border-2 border-white/10"
+              className="w-full h-[90%] object-contain rounded-lg border-2 border-white/10"
             />
           </div>
           
