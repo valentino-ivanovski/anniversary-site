@@ -355,7 +355,7 @@ const StarJar: React.FC = () => {
         onClick={handleJarClick}
       >
         {/* Jar Image Container */}
-        <div className="relative w-100 h-84">
+        <div className="relative w-90 h-74">
           {/* Jar Image */}
           <img 
             src="/jar2.png?v2" 
