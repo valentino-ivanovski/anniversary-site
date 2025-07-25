@@ -29,7 +29,7 @@ const MemoryModal: React.FC<MemoryModalProps> = ({ memory, isOpen, onClose }) =>
       <div className="absolute inset-0" onClick={onClose} />
       <motion.div
         onClick={(e) => e.stopPropagation()}
-        className="bg-[#15224D] rounded-2xl p-4 max-w-md w-full mx-4 transform border border-white/10 shadow-2xl"
+        className="bg-[#15224D] rounded-2xl p-4 max-w-md w-full max-h-[80vh] overflow-y-auto mx-4 transform border border-white/10 shadow-2xl"
         initial={{ scale: 0.95, opacity: 0 }}
         animate={{ scale: 1, opacity: 1 }}
         exit={{ scale: 0.95, opacity: 0 }}
