@@ -20,7 +20,7 @@ const MemoryModal: React.FC<MemoryModalProps> = ({ memory, isOpen, onClose }) =>
 
   return (
     <motion.div
-      className="fixed inset-0 bg-black/40 h-screen w-screen flex items-center justify-center z-50"
+      className="fixed inset-0 flex items-center justify-center z-50"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
@@ -47,7 +47,7 @@ const MemoryModal: React.FC<MemoryModalProps> = ({ memory, isOpen, onClose }) =>
            <img
               src={memory.image}
               alt="Memory"
-              className="w-full h-[90%] object-contain rounded-lg border-2 border-white/10"
+              className="w-full h-[80%] object-contain rounded-lg border-2 border-white/10"
             />
           </div>
           

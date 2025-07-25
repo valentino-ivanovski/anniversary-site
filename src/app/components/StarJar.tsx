@@ -244,7 +244,7 @@ const memories: Memory[] = [
     },
     {
         id: 39,
-        image: "/images/35.jpeg",
+        image: "/images/39.jpeg",
         text: "Who would've thought that one day you would be sitting on my lap, in my own house..",
         date: "June, 2025"
     },
