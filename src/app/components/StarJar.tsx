@@ -303,20 +303,25 @@ const StarJar: React.FC = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [isAnimating, setIsAnimating] = useState(false);
   const [lastMemoryId, setLastMemoryId] = useState<number | null>(null);
+  const [openedMemoryIds, setOpenedMemoryIds] = useState<number[]>([]);
 
   const handleJarClick = () => {
     if (isAnimating) return;
 
-    let randomMemory: Memory;
-    do {
-      randomMemory = memories[Math.floor(Math.random() * memories.length)];
-    } while (randomMemory.id === lastMemoryId && memories.length > 1);
+    let availableMemories = memories.filter(m => !openedMemoryIds.includes(m.id));
+    if (availableMemories.length === 0) {
+      setOpenedMemoryIds([]);
+      availableMemories = [...memories];
+    }
+
+    const randomMemory = availableMemories[Math.floor(Math.random() * availableMemories.length)];
 
     setIsAnimating(true);
 
     setTimeout(() => {
       setSelectedMemory(randomMemory);
       setLastMemoryId(randomMemory.id);
+      setOpenedMemoryIds(prev => [...prev, randomMemory.id]);
       setIsModalOpen(true);
       setIsAnimating(false);
     }, 800);
