@@ -385,7 +385,7 @@ const StarJar: React.FC = () => {
 
       {/* Quote Label */}
       <div className="mt-8 max-w-4xl text-center">
-        <p className="text-yellow-100 text-lg leading-relaxed font-medium italic sm:px-4 px-6">
+        <p className="text-yellow-100 sm:text-lg text-sm leading-relaxed font-medium italic sm:px-4 px-6">
           "My baby. Every time you made me smile during this year, I took one star from the night sky and stored it in this jar. You helped me collect enough stars to light up the rest of my life. <br></br> <br></br> Thank you for lighting up my life for one entire year; I would never want to experience darkness again. <br></br> <br></br> Happy one year anniversary, my love!"
         </p>
       </div>
