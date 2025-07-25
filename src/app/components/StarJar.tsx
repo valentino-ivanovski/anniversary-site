@@ -286,7 +286,7 @@ const memories: Memory[] = [
     },
     {
         id: 46,
-        image: "/images/45.jpg",
+        image: "/images/46.jpg",
         text: "The Lightning Kiss",
         date: "September 11, 2024"
     },
