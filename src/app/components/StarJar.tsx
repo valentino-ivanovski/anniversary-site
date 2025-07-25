@@ -337,7 +337,7 @@ const StarJar: React.FC = () => {
   }));
 
   return (
-    <div className="flex flex-col items-center">
+    <div className="flex flex-col h-full items-center">
       {/* Animated star that emerges from jar */}
       {isAnimating && (
         <div className="fixed inset-0 pointer-events-none z-40">
